@@ -1,16 +1,18 @@
 {
-  "name": "instagram-api",
+  "name": "instagram-api-proxy",
   "version": "1.0.0",
-  "description": "Instagram Profile API - Serverless",
+  "description": "Instagram API Proxy for Vercel",
   "main": "api/profile.js",
-  "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel --prod"
+  "engines": {
+    "node": "24.x"
   },
   "dependencies": {
     "axios": "^1.6.0"
   },
-  "engines": {
-    "node": "18.x"
-  }
+  "scripts": {
+    "start": "node api/profile.js"
+  },
+  "keywords": ["instagram", "api", "proxy"],
+  "author": "",
+  "license": "MIT"
 }
